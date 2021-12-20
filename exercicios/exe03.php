@@ -9,7 +9,6 @@ for ($i=0; $i <20; $i++) {
 
 $result = [];
 
-
 for ($i=0; $i<20 ; $i++) { 
     if ($tabela[$i] !== empty($result)) {  
         $result[$i] = $tabela[$i]; 

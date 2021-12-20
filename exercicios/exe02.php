@@ -5,10 +5,20 @@
 
  $calcular = [];
 
-for ($i=$numero_inicia; $i <$numero_final ; $i++) { 
+for ($i=0; $i <$numero_final ; $i++) { 
         $calcular[$i] = $numero_inicial++;
 }
-$resultado = $calcular;
+$resultado = [];
+
+for ($i=0; $i <$numero_final ; $i++) { 
+        if ( $calcular[$i] != $calcular[0]) {
+            for ($a=2; $a <$calcular[$i]-1 ; $a++) { 
+               if ($calcular[$i] % $a != 0) {
+                $resultado[$i]= $calcular[$i];
+               }
+            }
+        }
+}
 
 
 
